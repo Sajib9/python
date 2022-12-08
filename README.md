@@ -12,5 +12,5 @@ print(x + y)
 myFun()
 print("new:",x) 
 # Data type
-  dict looks like object, x = {'name':'sajib'} key , value pair
+  dict looks like object, x = {'name':'sajib'} key , value pair.
    set without key , value pair x = {"apple", "banana"}
