@@ -13,4 +13,5 @@ myFun()
 print("new:",x) 
 # Data type
   dict looks like object, x = {'name':'sajib'} key , value pair.
-   set without key , value pair x = {"apple", "banana"}
+   set without key , value pair x = {"apple", "banana"},
+   list looks like array myList = ['apple','banana']
