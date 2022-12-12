@@ -15,3 +15,4 @@ print("new:",x)
   dict looks like object, x = {'name':'sajib'} key , value pair.
    set without key , value pair x = {"apple", "banana"},
    list looks like array myList = ['apple','banana']
+   List-From Python's perspective, lists are defined as objects with the data type 'list'.
