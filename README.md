@@ -21,6 +21,7 @@ print("new:",x)
    ->insert() method add item into specific index, myList.insert(5,'e').<br>
    ->extend() To append elements from another list to the current list, this methode allow to add any iterable like tuple,set.<br>
    ->remove() method removes the specified item.<br>
+   ->list ordered & changable.
    
 # for loop
   ->for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error,<br>
