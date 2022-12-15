@@ -29,4 +29,6 @@ print("new:",x)
     pass <br>
   # having an empty for loop like this, would raise an error without the pass statement.
     ->newlist = [expression for item in iterable if condition == True]<br>
-  # mytuple = ("apple", "banana", "cherry")  <br>
+  # tuple
+    ->orded but unchangable<br>
+    mytuple = ("apple", "banana", "cherry")  <br>
