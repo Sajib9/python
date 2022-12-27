@@ -31,4 +31,16 @@ print("new:",x)
     ->newlist = [expression for item in iterable if condition == True]<br>
   # tuple
     ->orded but unchangable<br>
-    mytuple = ("apple", "banana", "cherry")  <br>
+    mytuple = ("apple", "banana", "cherry") <br>
+    ->Tuple items are indexed
+    
+  # set 
+    ->A set is a collection which is unordered, unchangeable*, and unindexed <br>
+    ->do not allow duplicate values
+    
+    
+# array
+  ->Python does not have built-in support for Arrays <br>
+   ->to work with arrays in Python you will have to import a library, like the NumPy library "import numpy as np"
+   ->Join two arrays ,np.concatenate((arr1, arr2)) ,arr1 = np.array([1, 2, 3]) ,arr2 = np.array([4, 5, 6]).
+   ->We use array_split() for splitting arrays
