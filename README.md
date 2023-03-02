@@ -44,3 +44,70 @@ print("new:",x)
    ->to work with arrays in Python you will have to import a library, like the NumPy library "import numpy as np"
    ->Join two arrays ,np.concatenate((arr1, arr2)) ,arr1 = np.array([1, 2, 3]) ,arr2 = np.array([4, 5, 6]).
    ->We use array_split() for splitting arrays
+   
+ # First class function
+    .python function are object
+    .can store function in variable
+    .pass function as argument in another function
+    .can return the fron another function
+   
+  # Functions can be passed as arguments to other functions:
+        def shout(text):
+          return text.upper()
+
+        def yell(text):
+          return text.lower()
+
+        def greet(func):
+          print('I am greet');
+          greetings = func("I am Higer order function")
+          print(greetings)
+
+        greet(shout)
+        greet(yell)
+     
+  # Functions can return another function:
+    def add(x):
+      temp = 10
+      print(x)
+      def adder(y):
+        print('value of x in inner function:',x)
+        return x+y+temp
+      return adder
+    x = add(10)
+    print(x)
+    print(x(15))
+  # What is Python *args ?
+     . With *args, any number of extra arguments can be tacked on to your current formal parameters.
+     . we want to make a multiply function that takes any number of arguments and is able to multiply them all together. It can be done using *args.
+     . Using the * the variable that we associate with the * becomes an iterable meaning you can do things like iterate over it, run some higher-order functions such           as map and filter, etc.
+     
+     def non_key_arg(*value):
+        for data in value:
+        print(data)
+
+     non_key_arg("sajib","moin","mahmud")
+     
+     //another exmple
+     def non_key_arg(value1,*value):
+        print(value1)
+        for data in value:
+          print(data)
+
+      non_key_arg("sajib","moin","mahmud")
+   
+  # What is Python **kwargs?
+    .kwargs as being a dictionary that maps each keyword to the value that we pass alongside it.
+    .we can iterate over them
+    
+    def non_key_arg(value1,**kwarg):
+      print(value1)
+      for key,data in kwarg.items():
+          print(key,data)
+
+    non_key_arg('Hello',name="sajib",age=30)
+  # *args receives arguments as a tuple.
+  **kwargs receives arguments as a dictionary.
+  
+  # yeild vs return :
+    *Return sends a specified value back to its caller whereas Yield can produce a sequence of values. We should use yield when we want to iterate over a sequence, but         don’t want to store the entire sequence in memory
