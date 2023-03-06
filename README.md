@@ -111,3 +111,6 @@ print("new:",x)
   
   # yeild vs return :
     *Return sends a specified value back to its caller whereas Yield can produce a sequence of values. We should use yield when we want to iterate over a sequence, but         don’t want to store the entire sequence in memory
+   # Enumerate() :
+      . Enumerate() method adds a counter to an iterable and returns it in a form of enumerating object.
+      enumerate(iterable, start=0)
