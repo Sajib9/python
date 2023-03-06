@@ -75,7 +75,7 @@ print("new:",x)
         return x+y+temp
       return adder
     x = add(10)
-    print(x)
+    print(x) // return reference
     print(x(15))
   # What is Python *args ?
      . With *args, any number of extra arguments can be tacked on to your current formal parameters.
