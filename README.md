@@ -114,3 +114,25 @@ print("new:",x)
    # Enumerate() :
       . Enumerate() method adds a counter to an iterable and returns it in a form of enumerating object.
       enumerate(iterable, start=0)
+   # Generator():
+      .A generator function is defined just like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return. If the body of a def contains yield, the function automatically becomes a generator function. Generator functions return a generator object
+      def sumTwoNum():#generator function
+            i= 5
+            while True:
+                yield i
+                i += 2
+
+        for num in sumTwoNum():
+            if num > 30:
+                break;
+            print(num)
+            
+        def fibonacci(limit):
+              a,b = 0,1
+
+              while a < limit:
+                  yield a
+                  a,b = b, a + b
+
+          for value in fibonacci(20):
+              print (value)
